@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка еды!</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container_1">
+                <img class="logo" src="public/images/logo.png" alt="">
+                <img class="title" src="public/images/title.svg" alt="">
+            
+            </div>
+            <div class="container_2">
+                <img class="map" src="public/images/map.png" alt="">
+                <div>
+                  <p class="number">8 (900) 000-00-00</p>
+                  <div class="doc dropdown">
+                    <p class="city">Вологда</p>
+                    <img class="arrow_down" src="public/images/arrow_down.svg" alt="">
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeCity('Вологда')">Вологда</a>
+                      <a href="#" onclick="changeCity('Череповец')">Череповец</a>
+                      <a href="#" onclick="changeCity('Москва')">Москва</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="container_3">
+                <button class="log_out">
+                    <img class="door" src="public/images/door.png" alt="">
+                    <p class="text_voity">Войти</p>
+                </button>
+                <button class="shop">
+                    <img class="basket" src="public/images/bascet.png" alt="">
+                    <p class="text_korzina">Корзина</p>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="block">
+            <div class="frame">
+                <div class="menu">
+                    <button class="button_menu">
+                        <p style="padding-left: 5px;" class="text_menu">Пицца</p>
+                    </button>
+                    <hr/>
+                    <button class="button_menu">
+                        <p class="text_menu">Роллы</p>
+                    </button>
+                    <hr/>
+                    <button class="button_menu">
+                        <p class="text_menu">Бургеры</p>
+                    </button>
+                    <hr/>
+                    <button class="button_menu">
+                        <p  class="text_menu">Картошка Фри</p>
+                    </button>
+                    <hr/>
+                    <button class="button_menu">
+                        <p class="text_menu">Салаты</p>
+                    </button>
+                    <hr/>
+                    <button class="button_menu">
+                        <p class="text_menu">Напитки</p>
+                    </button>
+                    <hr/>
+                    <button style="margin-right: 8px;" class="button_menu">
+                        <p class="text_menu">Десерты</p>
+                    </button>
+                </div>
+                <div class="search">
+                    <input class="search_text" type="text" placeholder="Поиск:">
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="frame">
+                <div class="slider">
+                    <div class="slides">
+                    <div class="slide" style="margin-left: 0px;">Слайд 1</div>
+                    <div class="slide">Слайд 2</div>
+                    <div class="slide">Слайд 3</div>
+                    <div class="slide">Слайд 4</div>
+                    <div class="slide">Слайд 5</div>
+                    <div class="slide">Слайд 6</div>
+                    </div>
+                    <button class="prevButton" id="prevButton">
+                        <img class="arr" src="public/images/arrow-search.svg" alt="">
+                    </button>
+                    <button class="nextButton" id="nextButton">
+                        <img class="arr" src="public/images/arrow-search2.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="frame">
+                <div class="order">
+                    <p class="orderText">Часто заказывают</p>
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+
+                    <div class="cont_1">
+                        <div class="contImg"></div>
+                        <p class="contText">Название</p>
+                        <div class="price">
+                            <p class="priceText">1000</p>
+                        </div>
+                        <button class="btnShop">
+                            <p class="shopText">В корзину</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="frame">
+                <div class="stocks">
+                    <p class="textStocks">Акции</p>
+                    <div class="stc">
+                        <div class="cont_2">
+                            <div class="stocksImg"></div>
+                            <div class="txt">
+                                <p class="nameStocks">Название акции</p>
+                                <p class="property">Описание</p>
+                            </div>
+                        </div>
+                        <div class="cont_2">
+                            <div class="stocksImg"></div>
+                            <div class="txt">
+                                <p class="nameStocks">Название акции</p>
+                                <p class="property">Описание</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footFrame">
+            <div class="first">
+                <h2>Доставка еды</h2>
+                <div class="footer-menu">
+                <ul>
+                    <li><a class="text" href="https://delipro.ru">О нас</a></li>
+                    <li><a class="text" href="https://delipro.ru">Заведения</a></li>
+                    <li><a class="text" href="https://delipro.ru">Контакты</a></li>
+                    <li><a class="text" href="https://delipro.ru">Доставка и оплата</a></li>
+                </ul>
+                </div>
+            
+                <div class="footer-additional">
+                    <ul>
+                        <li><a class="text" href="https://delipro.ru">Delivery  © 2023</a></li>
+                        <li><a class="text" href="https://delipro.ru">Политика конфиденциальности</a></li>
+                        <li><a class="text" href="https://delipro.ru">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <ul class="social-icons">
+                    <div style="display: flex; justify-content: space-between;">
+                        <li><a class="icons" href="https://delipro.ru"><img src="public/images/wp.svg" alt=""></a></li>
+                        <li><a class="icons" href="https://delipro.ru"><img src="public/images/telegram.svg" alt=""></a></li>
+                        <li><a class="icons" href="https://delipro.ru"><svg width="46" height="46" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icons8-vk 1 1" clip-path="url(#clip0_123_431)">
+                                <path id="Vector" d="M34.5679 0C1.7284 0 0 1.75 0 35C0 70 1.7284 70 34.5679 70C68.2716 70 70 68.25 70 35C70 1.75 68.2716 0 34.5679 0Z" fill="#0077FF"/>
+                                <path id="Vector_2" d="M36.6418 51.1C21.0863 51.1 12.2715 40.425 11.9258 22.4H19.7036C19.8764 35.525 25.7529 41.125 30.2468 42.175V22.4H37.506V33.775C41.9999 33.25 46.6665 28.175 48.2221 22.4H55.4813C54.2715 29.4 49.0863 34.65 45.4566 36.75C49.0863 38.5 54.9628 43.05 57.0369 51.1H48.9134C47.185 45.675 42.8641 41.475 37.1604 40.775V51.1H36.6418Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_123_431">
+                                <rect width="70" height="70" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg></a></li>
+                    </div>
+                    <div class="txtTime">
+                        <li>Ежедневно с 09:00 до 23:00</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="js.js"></script>
+</body>
+</html>
